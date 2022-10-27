@@ -17,9 +17,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.deepOrange,
       ),
-      body: const Center(
-        child: Image(
-          image: AssetImage('assets/sao.jpg'),
+      body: Center(
+        child: ElevatedButton.icon(
+          onPressed: () {},
+          icon: Icon(Icons.mail),
+          label: Text('Mail'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
