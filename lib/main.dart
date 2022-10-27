@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Home(),
   ));
 }
 
 class Home extends StatelessWidget {
+  const Home({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,13 +18,9 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
       ),
       body: const Center(
-        child: Text('hello Xiel',
-            style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 2.0,
-                color: Color.fromARGB(255, 129, 129, 129),
-                fontFamily: 'Schyler')),
+        child: Image(
+          image: NetworkImage('https://wallpapercave.com/wp/wp6776928.jpg'),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
