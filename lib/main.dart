@@ -17,14 +17,10 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.deepOrange,
       ),
-      body: Center(
-        child: ElevatedButton.icon(
-          onPressed: () {
-            print('You got mail');
-          },
-          icon: Icon(Icons.mail),
-          label: Text('Mail'),
-        ),
+      body: Container(
+        padding: EdgeInsets.all(60.0),
+        color: Colors.grey[400],
+        child: Text('Hello Bro'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
