@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
       ),
       body: const Center(
         child: Image(
-          image: NetworkImage('https://wallpapercave.com/wp/wp6776928.jpg'),
+          image: AssetImage('assets/sao.jpg'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
